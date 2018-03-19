@@ -21,7 +21,7 @@ NOTE:
   torch_to_caffe2.sh <model_filename> <input_dimension>
 
 * The model file must be in the same directory of the shell script
-* The input dimension should look like this: (1,3,512,512)
+* The input dimension needs to be surrounded by quotes. It should look like this: "(1,3,512,512)"
 
 ## Acknowledgement
 
