@@ -4,12 +4,13 @@ Python and shell script to convert Torch model to Caffe2.
 The conversion uses ONNX Caffe2 backend and has three steps like:
 Torch (.t7) -> PyTorch (.pth) -> ONNX (.onnx.pb) -> Caffe2 (.pb)
 
-## Requirement
+## Requirements
 
+* Python 3.5
 * PyTorch
 * ONNX, ONNX-Caffe2
-* Caffe2 (Python)
 * A Torch model file to convert (.t7)
+* Caffe2 (optional)
 
 NOTE:
 * If you don't have those in your environment yet, follow the steps below:
