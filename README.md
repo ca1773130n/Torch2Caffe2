@@ -3,7 +3,8 @@
 Python and shell script to convert Torch models into Caffe2 protobuf files.
 The conversion uses ONNX-Caffe2 backend and has three steps like:
 Torch (.t7) -> PyTorch (.pth) -> ONNX (.onnx.pb) -> Caffe2 (.pb)
-You need to specify the input dimension of the model.
+
+IMPORTANT: You need to specify the input dimension of the model.
 
 ## Source Download
 
