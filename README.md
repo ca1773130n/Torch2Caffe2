@@ -3,6 +3,7 @@
 Python and shell script to convert Torch models into Caffe2 protobuf files.
 The conversion uses ONNX-Caffe2 backend and has three steps like:
 Torch (.t7) -> PyTorch (.pth) -> ONNX (.onnx.pb) -> Caffe2 (.pb)
+You need to specify the input dimension of the model.
 
 ## Source Download
 
@@ -13,7 +14,6 @@ Torch (.t7) -> PyTorch (.pth) -> ONNX (.onnx.pb) -> Caffe2 (.pb)
 * Python 3.5
 * PyTorch
 * ONNX, ONNX-Caffe2
-* A Torch model file to convert (.t7)
 * Caffe2 (optional)
 
 NOTE:
@@ -29,5 +29,14 @@ NOTE:
 
 ## Acknowledgement
 
-    This script is based on a GitHub project https://github.com/clcarwin/convert_torch_to_pytorch
+This work is based on a GitHub project below.
+ * https://github.com/clcarwin/convert_torch_to_pytorch
+
+Tested environment
+ * Ubuntu 16.04
+ * Anaconda Python 3.6
+ * A Torch VGG-19 model file
+
+Known Issues
+ * PyTorch to ONNX conversion is imperfect (e.g. ONNX doesn't support ceil_mode in MaxPooling)
 
